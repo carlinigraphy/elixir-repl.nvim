@@ -1,0 +1,28 @@
+= Elixir REPL
+Brutally simple set of functions for sending text to an IEx session.
+
+
+== How to do
+[source]
+----
+<leader>m   start REPL
+
+,l    evaluate line
+,e    evaluate node
+,d    evaluate root node
+
+,v    select root node
+,e    evaluate visual selection
+----
+
+
+== Exposes
+. `require("elixir-repl").setup()`
+   .. Set keybindings
+. `require("elixir-repl").start()`
+   .. Launch `IEx` in new tab
+. `require("elixir-repl").to_repl(text, opts{})`
+   .. Send text to `IEx`
+   .. `opts.send` to append `\n` and execute immediately
+. `require("elixir-repl").get_root()`
+   .. Return root of TSNode under cursor
