@@ -1,8 +1,10 @@
 = Elixir REPL
+
 Brutally simple set of functions for sending text to an IEx session.
 
 
 == How to do
+
 [source]
 ----
 <leader>m   start REPL
@@ -17,6 +19,7 @@ Brutally simple set of functions for sending text to an IEx session.
 
 
 == Exposes
+
 . `require("elixir-repl").setup()`
    .. Set keybindings
 . `require("elixir-repl").start()`
